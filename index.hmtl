@@ -1,4 +1,70 @@
-web-gis-padang
-│
-├── README.md
-└── index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web GIS Rumah Sakit Indonesia</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        #judul {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            background: white;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #peta {
+            width: 100%;
+            height: calc(100% - 60px);
+            background: #dcecf3;
+            position: relative;
+        }
+
+        .daratan {
+            position: absolute;
+            left: 15%;
+            top: 35%;
+            width: 70%;
+            height: 25%;
+            background: #d9e6c3;
+            border: 2px solid #555;
+            border-radius: 50%;
+        }
+
+        .titik {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: red;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="judul">
+    <h2>Web GIS Rumah Sakit Indonesia</h2>
+</div>
+
+<div id="peta">
+
+    <div class="daratan"></div>
+
+    <div class="titik" style="left: 48%; top: 47%;"></div>
+    <div class="titik" style="left: 55%; top: 44%;"></div>
+    <div class="titik" style="left: 62%; top: 51%;"></div>
+
+</div>
+
+</body>
+</html>
